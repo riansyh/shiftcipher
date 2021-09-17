@@ -33,13 +33,17 @@ const menu = `==SHIFT CIPHER==
 2. Decrypt
 Option: `;
 
-const option = prompt(menu);
+const shiftCipher = () => {
+  const option = prompt(menu);
 
-if (option !== '1' && option !== '2') {
-  console.log('Wrong input!');
-} else {
-  const text = prompt(`Input text: `);
-  const key = parseInt(prompt(`Input key: `));
-  if (option === '1') console.log('Result\t:', encrypt(text, key));
-  else if (option === '2') console.log('Result\t:', decrypt(text, key));
-}
+  if (option !== '1' && option !== '2') {
+    console.log('Wrong input!');
+  } else {
+    const text = prompt(`Input text: `);
+    const key = parseInt(prompt(`Input key: `));
+    if (option === '1') console.log('Result\t:', encrypt(text, key));
+    else if (option === '2') console.log('Result\t:', decrypt(text, key));
+  }
+};
+
+shiftCipher();
