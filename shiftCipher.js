@@ -1,3 +1,10 @@
+/*
+Nama        : Rian Febriansyah
+NPM         : 140810190026
+Kelas       : B
+Deskiprsi   : Program enkripsi dan dekripsi text dengan menggunakan Shift Cipher
+*/
+
 const encrypt = (plaintext, key) => {
   return [...plaintext]
     .map((char) => {
